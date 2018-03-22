@@ -73,12 +73,23 @@ p {
 
 }
 
-ul {
+#nav {
 	position: fixed;
 	bottom: 100px;
+	font-size: 30px;
 }
 
+#contact {
 
+	font-size: 50px;
+	text-align: center;
+	color: darkred;
+
+}
+
+#info {
+	text-decoration: underline;
+}
 
 
 
