@@ -1,0 +1,62 @@
+
+	
+#title {
+	background-color: slategrey;
+	color: snow;
+	text-align: center;
+	font-size: 72px;
+	font-family: fantasy;
+
+}
+
+#sidenote {
+	background-color: lightgrey;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	font-family: cursive;
+	margin-right: 300px;
+	margin-left: 300px;
+
+}
+
+p {
+	background-color: dimgray;
+	color: darkgray;
+	font-family: helvetica;
+}
+
+#left {
+	position: relative;
+	left: 50px;
+}
+
+#right {
+	/*float: right;*/
+	/*float right is not working*/
+	position: relative;
+	left: 600px;
+	bottom: 1200px;
+}
+/*#upsidedown {
+	transform: rotate(90deg);
+	width: 200px;
+
+}*/
+
+.pictures{
+	width: 200px;
+    height: 120px;
+}
+.pictures img {
+    width: 100%;
+    height: auto;
+
+}
+
+#nav {
+	
+	position: absolute;
+	top: 500px;
+	right: 100px;
+}
