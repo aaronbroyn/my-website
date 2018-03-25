@@ -3,9 +3,10 @@
 #title {
 	background-color: slategrey;
 	color: snow;
-	text-align: center;
+	text-align: center; 
 	font-size: 72px;
 	font-family: fantasy;
+	border-bottom: 5px;
 
 }
 
@@ -17,26 +18,33 @@
 	font-family: cursive;
 	margin-right: 300px;
 	margin-left: 300px;
+	position: relative;
+	bottom: 70px;
 
 }
 
 p {
-	background-color: dimgray;
-	color: darkgray;
+	color: dimgray;
 	font-family: helvetica;
+	font-size: 25px;
 }
 
-#left {
-	position: relative;
-	left: 50px;
+#left img{
+
+	float: left;
+	clear: left;
+	display: block;
+	width: 40%;
 }
 
-#right {
-	/*float: right;*/
-	/*float right is not working*/
+#right img {
+
+	float: right;
+	clear: right;
+	display: block;
+	width: 40%;
 	position: relative;
-	left: 600px;
-	bottom: 1200px;
+	bottom: 2300px;
 }
 /*#upsidedown {
 	transform: rotate(90deg);
@@ -44,22 +52,14 @@ p {
 
 }*/
 
-.pictures{
-	width: 200px;
-    height: 100px;
+.pictures img{
+	size: auto;
+	max-width: 500px;
+	margin: 020px;
+	display: inline-block;
 }
-.pictures img {
-    width: 100%;
-    height: auto;
 
-} 
 
-#nav {
-	
-	position: absolute;
-	top: 500px;
-	right: 100px;
-}
 
 #gallerytitle {
 
@@ -75,7 +75,8 @@ p {
 
 #nav {
 	position: fixed;
-	bottom: 100px;
+	bottom: 10px;
+	left: 43%;
 	font-size: 30px;
 }
 
@@ -89,12 +90,80 @@ p {
 
 #info {
 	text-decoration: underline;
+	color: black;
 }
 
+@media only screen and (max-width: 1200px) { 
+
+.pictures img {
+	display: block;
+
+}
+ 
+#right img {
+	display: inline-block;
+	position: static;
+	clear: right;
+	float: left;
+} 
+
+#left img {
+	display: inline-block;
+	position: static;
+	clear: right;
+}
+
+#nav {
+	right: 10%;
+	font-size: 20px;
+	position: static;
+}
+ #galleytitle {
+ 	margin-left: 10px; 
+ 	margin-right: 10px;
+ 	position: static;
+ 	text-align: left;
+ 	font-size: 20px;
+ }
 
 
+}	
+
+@media only screen and (max-width: 600px) {
+
+.pictures img {
+	display: block;
+
+}
+ 
+#right img {
+	display: block;
+	position: static;
+	clear: right;
+	float: left;
+} 
+
+#left img {
+	display: block;
+	position: static;
+	clear: right;
+}
+
+#nav {
+	right: 10%;
+	font-size: 10px;
+	position: static;
+}
+ #galleytitle {
+ 	margin-left: 50px; 
+ 	margin-right: 50px;
+ 	position: static;
+ 	text-align: left;
+ 	font-size: 20px;
+ }
 
 
+}
 
 
 
